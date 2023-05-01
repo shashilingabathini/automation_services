@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Job Model - 01">
+  <name>Job-Model-01</name>
+  <uuid>7a2bc7e5-bcfc-4f67-ab1a-a4e14a1d1ce9</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#ec77ad22-32d7-4628-97c1-6c4acd9d3f36"/>
+  <targetRuleProject href="../../Job%20Model%20-%2001#61b8fde2-8114-4c15-8af8-2544bd7b71ab"/>
+  <tags key="operationDescription">
+    <value><![CDATA["This is a decision service model will be invoked from an external service inside baw automation workflow"]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Allowed to apply job"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

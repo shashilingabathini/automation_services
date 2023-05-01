@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>ec77ad22-32d7-4628-97c1-6c4acd9d3f36</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <decision id="node_1" name="AllowedToApply">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Long" collection="false" name="ssc marks"/>
+                <input bomType="java.lang.Long" collection="false" name="ipe marks"/>
+                <input bomType="java.lang.Long" collection="false" name="ug marks"/>
+                <output bomType="java.lang.String" collection="false" name="AllowedToApply"/>
+                <rule defaultRule="false" href="node_1/decision%20logic.dmt" kind="DecisionTable" name="decision logic"/>
+                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="AllowedToApply" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="ssc marks">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="ssc marks"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="ssc marks" typeRef="java.lang.Long"/>
+    </inputData>
+    <inputData id="node_3" name="ipe marks">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="ipe marks"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="ipe marks" typeRef="java.lang.Long"/>
+    </inputData>
+    <inputData id="node_4" name="ug marks">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="ug marks"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_4_ii" name="ug marks" typeRef="java.lang.Long"/>
+    </inputData>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
